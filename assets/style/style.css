@@ -80,3 +80,186 @@ a.learn-more-outline {
 .sales {
     color:#737373 ;
 }
+
+.stars span {
+    background: #26335D;
+    border-radius: 55px;
+    padding: 7px 11px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.stars span img {
+    transform: translateY(3px);
+}
+
+.product-img-icons {
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 100%;
+    gap: 15px;
+}
+
+.product-img {
+    position: relative;
+}
+
+.product-img>img {
+    height: 100%;
+}
+
+.product-img-icons-bg {
+    background: white;
+    padding: 10px;
+    border-radius: 55px;
+}
+
+.product-img-sales-bag {
+    position: absolute;
+    top: 20px;
+    color: #fff;
+    padding: 4px 10px;
+    left: 20px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px 0px #0000001A;
+}
+
+.product-img-sales-bag h6 {
+    color: #fff;
+}
+
+.card-product-body .col-6.stars {
+    max-width: max-content;
+}
+
+.card-courses {
+    padding: 50px 40px;
+}
+
+.btn-card-courses {
+    background-color: #FF6551;
+    height: 52px;
+    line-height: 50px;
+    text-align: center;
+    display: block;
+    border-radius: 5px;
+    font-weight: 600;
+    margin-bottom: 35px;
+}
+
+.per-month {
+    color: #8EC2F2;
+}
+
+.features-list img {
+    /* transform: translateY(-4px); */
+    /* vertical-align: middle; */
+    margin-right: 10px;
+}
+
+.features-list {
+    display: inline-flex;
+    align-items: flex-start;
+}
+
+.features-list:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.card-courses {
+    position: relative;
+}
+
+.new-bag {
+    position: absolute;
+    top: -27px;
+    right: -27px;
+}
+
+.new-bag h3 {
+    background: #E77C40;
+    width: 90px;
+    text-align: center;
+    height: 90px;
+    border-radius: 55px;
+    color: #fff;
+    line-height: 90px;
+}
+
+.card-slider-profile {
+    border-radius: 55%;
+}
+
+.card-slider img {
+    margin: 0 auto;
+}
+
+.card-items {
+    padding: 0 80px;
+}
+
+.slick-dots {
+    bottom: -55px !important;
+}
+
+.slick-dots li button:before {
+    font-size: 37px !important;
+}
+
+.cust-container {
+    max-width: 690px;
+    margin: 0 auto;
+}
+
+.form form {
+    display: inline-flex;
+    width: 100%;
+}
+
+input[type="email"] {
+    width: 100%;
+    height: 58px;
+    padding: 0 20px;
+    border: 1px solid #E6E6E6;
+    background-color: #F9F9F9;
+}
+
+input[type="submit"] {
+    font-size: 14px;
+    border: 0 !important;
+    color: #fff;
+    border-radius: 0 5px 5px 0px !important;
+    cursor: pointer;
+}
+
+ul.list-item {
+    padding: 0;
+    margin-top: 25px;
+    margin-bottom: 0;
+}
+
+ul.list-item li {
+    list-style: none;
+    font-weight: 600 !important;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 15px;
+}
+
+.copy-right {
+    background: #FAFAFA;
+}
+
+.social-icons {
+    display: inline-flex;
+    gap: 25px;
+    justify-content: flex-end;
+}
+
+ul.list-item li:not(:last-child) {
+    padding-bottom: 12px;
+}

@@ -1,0 +1,186 @@
+@media (max-width:1080px) {
+    .container {
+        width: 95%;
+    }
+}
+
+@media (max-width:1018px){
+    /*Navbar*/
+    .topnav.responsive a {
+        flex: 100%;
+        background: #fffdfd;
+        color: #000;
+        border-bottom: 1px solid #d7d7d7;
+    }
+
+    .logo-contain {
+        display: flex;
+        width: 100%;
+        flex: 100%;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .logo-a {
+        padding: 0  !important;
+        border: 0 !important;
+    }
+
+    .logo-contain a {
+        background: transparent !important;
+    }
+
+    .icon {
+        border: 0 !important;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .topnav.responsive a.icon {
+        position: relative !important;
+        text-align: right;
+        color: #fff;
+    }
+
+    .hide-on-mobile {
+        display: none;
+    }
+
+    #myTopnav {
+        position: absolute;
+        width: 100%;
+        top: 0;
+    }
+}
+
+@media (max-width:900px) {
+    .container {
+        width: 90%;
+    }
+
+    .col-2, .col-3, .col-4, .col-6,.flex-20 {
+        flex: 45%;
+    }
+}
+
+@media (max-width:768px) {
+    .g-30 {
+        gap: 30px;
+    }
+}
+
+@media (max-width:600px) {
+    /*Globally Responsive*/
+    .container {
+        width: 85%;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .col-2, .col-3, .col-4, .col-6,.flex-20 {
+        flex: 100%;
+    }
+
+    a {
+        font-size: 13px;
+    }
+
+    h1 {
+        font-size: 42px;
+        line-height: 55px;
+    }
+
+    h2 {
+        font-size: 32px;
+        line-height: 45px;
+    }
+
+    h3 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    h4 {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    h5 {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .pt-160 {
+        padding-top: 100px;
+    }
+
+    .pb-160 {
+        padding-bottom: 100px;
+    }
+
+    .pb-80 {
+        padding-bottom: 40px;
+    }
+
+    .pt-80 {
+        padding-top: 40px;
+    }
+
+    .pb-1 {
+        padding-bottom: 0.7rem;
+    }
+
+    .pt-1 {
+        padding-top: 0.7rem;
+    }
+
+    .pb-1-5 {
+        padding-bottom: 1rem;
+    }
+
+    .direction-change-responsive {
+        flex-direction: column-reverse;
+    }
+
+    .g-30 {
+        gap: 20px;
+    }
+
+
+    /*Style-css*/
+    .card-items {
+        padding: 0 30px;
+    }
+
+    input[type="submit"].btn-primary {
+        padding: 0 25px !important;
+    }
+    
+    ul.list-item {
+        margin-top: 12px;
+        margin-bottom: 15px;
+    }
+
+    .social-icons{
+        justify-content: center;
+        padding-bottom: 25px;
+    }
+
+    .copy-right{
+        text-align: center;
+    }
+}
+
+
+@media (max-width:400px) {
+    .card-courses {
+        padding: 40px 30px;
+    }
+
+    .card-courses>img {
+        width: 80px;
+    }
+}

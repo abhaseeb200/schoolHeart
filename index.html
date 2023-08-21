@@ -10,34 +10,44 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/style/style.css" />
     <link rel="stylesheet" href="assets/style/global.css" />
+    <link rel="stylesheet" href="assets/style/responsive.css" />
     <link rel="stylesheet" href="assets/style/navbar.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/style/slick-theme.css">
+    <link rel="stylesheet" href="assets/style/slick.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    
   </head>
   <body>
 
     <!--Header Bannar-->
     <div style="background: url('assets/images/hero-6-cover-sec.jpg');" class="bg-image-property main-banner">
-      <div class="topnav row justify-content-sb container align-items-center" id="myTopnav">
-        <div class="left row align-items-center">
-          <a href="#home"><h3 class="logo">Brandname</h3></a>
-          <a href="#home" class="active">Home</a>
-          <a href="#news">Product</a>
-          <a href="#contact">Pricing</a>
-          <a href="#about">Contact</a>
+      <div class="topnav" id="myTopnav">
+        <div class="row justify-content-sb container align-items-center">
+          <div class="left row align-items-center">
+            <div class="logo-contain">
+              <a href="#" class="logo-a">
+                <h3 class="logo text-white">Brandname</h3>
+              </a>
+              <a href="#" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+            </div>
+            <a href="#home" class="active menu-item-responsive">Home</a>
+            <a href="#news" class="menu-item-responsive">Product</a>
+            <a href="#contact" class="menu-item-responsive">Pricing</a>
+            <a href="#about" class="menu-item-responsive">Contact</a>
+            <a href="#login" class="hide-on-desktop">Login</a>
+            <a href="#join-us" class="hide-on-desktop">JOIN US</a>
+          </div>
+          <div class="right-menu hide-on-mobile">
+            <a href="#contact">Login</a>
+            <a href="#about" class="btn-primary-menu Join-us">JOIN US</a>
+          </div>
         </div>
-        <div class="right-menu">
-          <a href="#contact">Login</a>
-          <a href="#about" class="btn-primary-menu Join-us">JOIN US</a>
-        </div>
-        <a href="#" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
       </div>
 
-      <div class="main-bannar-content text-align-center row justify-content-center align-content-center">
+      <div class="main-bannar-content text-align-center row justify-content-center align-content-center container">
         <h5 class="width-100 m-0 pb-1-5 text-secondary">Join Us</h5>
         <h1 class="text-white width-100 m-0 pb-1-5">HIGH QUALITY <br> COURSES</h1>
         <h4 class="text-white width-100 m-0 pb-1-5">Our goal is to make online education work for everyone</h4>
@@ -86,7 +96,7 @@
     <div class="container pb-160 pt-160">
       <div class="row g-30 align-items-center">
         <div class="col-6">
-          <img src="assets/images/layout-1-image.png" alt="">
+          <img src="assets/images/layout-1-image.png" alt="" width="100%">
         </div>
         <div class="col-6">
           <div class="divider-2"></div>
@@ -101,8 +111,8 @@
 
     
     <!--Watch our course - LAYOUT 2-->
-    <div class="container pb-160">
-      <div class="row g-30 align-items-center">
+    <div class="container pb-160 ">
+      <div class="row g-30 align-items-center direction-change-responsive">
         <div class="col-6">
           <div class="divider-2"></div>
           <h2>Every Client Matters</h2>
@@ -112,7 +122,7 @@
           <div class="learn-more primary">Learn More</div>
         </div>
         <div class="col-6">
-          <img src="assets/images/col-md-6.jpg" alt="">
+          <img src="assets/images/col-md-6.jpg" alt="" width="100%">
         </div>
       </div>
     </div>
@@ -120,7 +130,7 @@
 
     <!--Get Quality Education-->
     <div class="container pb-160">
-      <div class="row">
+      <div class="row pb-80">
         <div class="col-6">
           <h6 class="primary m-0 pb-1">Courses</h6>
           <h2 class="m-0">Get Quality Education</h2>
@@ -130,32 +140,355 @@
         </div>
         <div class="col-6"></div>
       </div>
-      <div class="row">
+      <div class="row g-30">
         <div class="col-3">
           <div class="card-product">
             <div class="product-img">
-              <img src="assets/images/product-1.jpg" alt="" width="238" height="300">
+              <img src="assets/images/product-cover-129.jpg"" width="238" height="300" class="width-100 obj-fit-cover">
+              <div class="product-img-sales-bag bg-danger">
+                <h6 class="m-0">Sale</h6>
+              </div>
+              <div class="product-img-icons">
+                <span class="product-img-icons-bg"><img src="assets/images/heart.png" alt="" width="20" height="auto" class="translate-y3"></span>
+                <span class="product-img-icons-bg"><img src="assets/images/backet.svg" alt="" width="20" height="auto" class="translate-y3"></span>
+                <span class="product-img-icons-bg"><img src="assets/images/eye.svg" alt="" width="20" height="auto" class="translate-y3"></span>
+              </div>
             </div>
             <div class="card-product-body">
-              <div class="row pb-1">
+              <div class="row pb-1 flex-nowrap">
                 <div class="col-6"><h6 class="primary m-0">Books Liberary</h6></div>
-                <div class="col-6 stars">4.9</div>
+                <div class="col-6 stars text-align-right"><span><img src="assets/images/star.png" alt="" width="16" height="16"> 4.9 </span></div>
               </div>
               <h5 class="m-0 pb-1">Our Experts Teacher</h5>
               <p class="m-0 pb-1">We focus on ergonomics   
                 and meeting you....</p>
-                <h6 class="m-0 pb-1 sales">15 Sales</h6>
-                <h5 class="m-0 pb-1 price-mute">$16.48 <span>$6.48</span></h5>
-                <a href="#" class="learn-more-outline primary">Learn More</a>
+                <h6 class="m-0 pb-1 sales"><img src="assets/images/save icon.png" alt="" width="16" height="16"> 15 Sales</h6>
+                <h5 class="m-0 pb-2 price-mute">$16.48 <span>$6.48</span></h5>
+                <a href="#" class="learn-more-outline primary">Learn More <img src="assets/images/arrow right.png" class="translate-y2 ml-10px" alt="" width="atuo" height="atuo"></a>
             </div>
           </div>
         </div>
-        <div class="col-3"></div>
-        <div class="col-3"></div>
-        <div class="col-3"></div>
+        <div class="col-3">
+          <div class="card-product">
+            <div class="product-img">
+              <img src="assets/images/product-cover-131.jpg" alt="" width="238" height="300" class="width-100 obj-fit-cover">
+              <div class="product-img-sales-bag bg-danger">
+                <h6 class="m-0">Sale</h6>
+              </div>
+              <div class="product-img-icons">
+                <span class="product-img-icons-bg"><img src="assets/images/heart.png" alt="" width="20" height="auto" class="translate-y3"></span>
+                <span class="product-img-icons-bg"><img src="assets/images/backet.svg" alt="" width="20" height="auto" class="translate-y3"></span>
+                <span class="product-img-icons-bg"><img src="assets/images/eye.svg" alt="" width="20" height="auto" class="translate-y3"></span>
+              </div>
+            </div>
+            <div class="card-product-body">
+              <div class="row pb-1 flex-nowrap">
+                <div class="col-6"><h6 class="primary m-0">Training Courses</h6></div>
+                <div class="col-6 stars text-align-right"><span><img src="assets/images/star.png" alt="" width="16" height="16"> 4.9 </span></div>
+              </div>
+              <h5 class="m-0 pb-1">Watch our Courses</h5>
+              <p class="m-0 pb-1">We focus on ergonomics   
+                and meeting you....</p>
+                <h6 class="m-0 pb-1 sales"><img src="assets/images/save icon.png" alt="" width="16" height="16"> 15 Sales</h6>
+                <h5 class="m-0 pb-2 price-mute">$16.48 <span>$6.48</span></h5>
+                <a href="#" class="learn-more-outline primary">Learn More <img src="assets/images/arrow right.png" class="translate-y2 ml-10px" alt="" width="atuo" height="atuo"></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card-product">
+            <div class="product-img">
+              <img src="assets/images/product-cover-130.png" alt="" width="238" height="300" class="width-100 obj-fit-cover">
+              <div class="product-img-sales-bag bg-danger">
+                <h6 class="m-0">Sale</h6>
+              </div>
+              <div class="product-img-icons">
+                <span class="product-img-icons-bg"><img src="assets/images/heart.png" alt="" width="20" height="auto" class="translate-y3"></span>
+                <span class="product-img-icons-bg"><img src="assets/images/backet.svg" alt="" width="20" height="auto" class="translate-y3"></span>
+                <span class="product-img-icons-bg"><img src="assets/images/eye.svg" alt="" width="20" height="auto" class="translate-y3"></span>
+              </div>
+            </div>
+            <div class="card-product-body">
+              <div class="row pb-1 flex-nowrap">
+                <div class="col-6"><h6 class="primary m-0">Expert instruction</h6></div>
+                <div class="col-6 stars text-align-right"><span><img src="assets/images/star.png" alt="" width="16" height="16"> 4.9 </span></div>
+              </div>
+              <h5 class="m-0 pb-1">Watch our Courses</h5>
+              <p class="m-0 pb-1">We focus on ergonomics   
+                and meeting you....</p>
+                <h6 class="m-0 pb-1 sales"><img src="assets/images/save icon.png" alt="" width="16" height="16"> 15 Sales</h6>
+                <h5 class="m-0 pb-2 price-mute">$16.48 <span>$6.48</span></h5>
+                <a href="#" class="learn-more-outline primary">Learn More <img src="assets/images/arrow right.png" class="translate-y2 ml-10px" alt="" width="atuo" height="atuo"></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card-product">
+            <div class="product-img">
+              <img src="assets/images/product-cover-132.png" alt="" width="238" height="300" class="width-100 obj-fit-cover">
+              <div class="product-img-sales-bag bg-danger">
+                <h6 class="m-0">Sale</h6>
+              </div>
+              <div class="product-img-icons">
+                <span class="product-img-icons-bg"><img src="assets/images/heart.png" alt="" width="20" height="auto" class="translate-y3"></span>
+                <span class="product-img-icons-bg"><img src="assets/images/backet.svg" alt="" width="20" height="auto" class="translate-y3"></span>
+                <span class="product-img-icons-bg"><img src="assets/images/eye.svg" alt="" width="20" height="auto" class="translate-y3"></span>
+              </div>
+            </div>
+            <div class="card-product-body">
+              <div class="row pb-1 flex-nowrap">
+                <div class="col-6"><h6 class="primary m-0">Training Courses</h6></div>
+                <div class="col-6 stars text-align-right"><span><img src="assets/images/star.png" alt="" width="16" height="16"> 4.9 </span></div>
+              </div>
+              <h5 class="m-0 pb-1">Watch our Courses</h5>
+              <p class="m-0 pb-1">We focus on ergonomics   
+                and meeting you....</p>
+                <h6 class="m-0 pb-1 sales"><img src="assets/images/save icon.png" alt="" width="16" height="16"> 15 Sales</h6>
+                <h5 class="m-0 pb-2 price-mute">$16.48 <span>$6.48</span></h5>
+                <a href="#" class="learn-more-outline primary">Learn More <img src="assets/images/arrow right.png" class="translate-y2 ml-10px" alt="" width="atuo" height="atuo"></a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
+  <!--Most Popular Courses-->
+    <div class="bg-blue">
+      <div class="container pt-160 pb-160">
+        <div class="row pb-80">
+          <div class="col-6">
+            <h6 class="primary m-0 pb-1">Practice Advice</h6>
+            <h2 class="text-white m-0 pb-1">Most Popular Courses</h2>
+            <p class="text-white m-0">Problems trying to resolve the conflict between 
+              the two major realms of Classical physics: Newtonian mechanics </p>
+          </div>
+          <div class="col-6"></div>
+        </div>
+        <div class="row g-30">
+          <div class="col-4">
+            <div class="card-courses bg-white">
+              <img src="assets/images/circle-heart.svg" alt="" width="96" class="pb-1-5">
+              <h3 class="m-0 pb-1-5">FREE</h3>
+              <h6 class="m-0 pb-1-5 text-mute">Organize across all apps by 
+                hand</h6>
+                <h2 class="primary m-0">19$</h2>
+                <h6 class="m-0 per-month pb-1-5">Per Month</h6>
+                <p class="pb-1-5">Slate helps you see how 
+                  many more days you need...</p>
+                  <a href="#" class="text-white width-100 btn-card-courses">Try for free</a>
+                  <div class="features-list translate-y3">
+                    <img src="assets/images/circle-ok.svg" alt="" width="32" class=""><h6 class="m-0  translate-y3">Unlimited product updates</h6>
+                  </div>
+                  <div class="features-list translate-y3">
+                    <img src="assets/images/circle-ok.svg" alt="" width="32" class=""><h6 class="m-0  translate-y3">Unlimited product updates</h6>
+                  </div>
+                  <div class="features-list translate-y3">
+                    <img src="assets/images/circle-ok.svg" alt="" width="32" class=""><h6 class="m-0  translate-y3">Unlimited product updates</h6>
+                  </div>
+                  <div class="features-list">
+                    <img src="assets/images/circle-ok-mute.svg" alt="" width="32" class=""><h6 class="m-0  translate-y3">1GB  Cloud storage</h6>
+                  </div>
+                  <div class="features-list">
+                    <img src="assets/images/circle-ok-mute.svg" alt="" width="32" class=""><h6 class="m-0">Email and community support</h6>
+                  </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card-courses bg-white">
+              <div class="new-bag"><h3 class="m-0">New</h3></div>
+              <img src="assets/images/circle-heart.svg" alt="" width="96" class="pb-1-5">
+              <h3 class="m-0 pb-1-5">FREE</h3>
+              <h6 class="m-0 pb-1-5 text-mute">Organize across all apps by 
+                hand</h6>
+                <h2 class="primary m-0">19$</h2>
+                <h6 class="m-0 per-month pb-1-5">Per Month</h6>
+                <p class="pb-1-5">Slate helps you see how 
+                  many more days you need...</p>
+                  <a href="#" class="text-white width-100 btn-card-courses">Try for free</a>
+                  <div class="features-list translate-y3">
+                    <img src="assets/images/circle-ok.svg" alt="" width="32" class=""><h6 class="m-0  translate-y3">Unlimited product updates</h6>
+                  </div>
+                  <div class="features-list translate-y3">
+                    <img src="assets/images/circle-ok.svg" alt="" width="32" class=""><h6 class="m-0  translate-y3">Unlimited product updates</h6>
+                  </div>
+                  <div class="features-list translate-y3">
+                    <img src="assets/images/circle-ok.svg" alt="" width="32" class=""><h6 class="m-0  translate-y3">Unlimited product updates</h6>
+                  </div>
+                  <div class="features-list">
+                    <img src="assets/images/circle-ok-mute.svg" alt="" width="32" class=""><h6 class="m-0  translate-y3">1GB  Cloud storage</h6>
+                  </div>
+                  <div class="features-list">
+                    <img src="assets/images/circle-ok-mute.svg" alt="" width="32" class=""><h6 class="m-0">Email and community support</h6>
+                  </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card-courses bg-white">
+              <img src="assets/images/circle-heart.svg" alt="" width="96" class="pb-1-5">
+              <h3 class="m-0 pb-1-5">FREE</h3>
+              <h6 class="m-0 pb-1-5 text-mute">Organize across all apps by 
+                hand</h6>
+                <h2 class="primary m-0">19$</h2>
+                <h6 class="m-0 per-month pb-1-5">Per Month</h6>
+                <p class="pb-1-5">Slate helps you see how 
+                  many more days you need...</p>
+                  <a href="#" class="text-white width-100 btn-card-courses">Try for free</a>
+                  <div class="features-list translate-y3">
+                    <img src="assets/images/circle-ok.svg" alt="" width="32" class=""><h6 class="m-0  translate-y3">Unlimited product updates</h6>
+                  </div>
+                  <div class="features-list translate-y3">
+                    <img src="assets/images/circle-ok.svg" alt="" width="32" class=""><h6 class="m-0  translate-y3">Unlimited product updates</h6>
+                  </div>
+                  <div class="features-list translate-y3">
+                    <img src="assets/images/circle-ok.svg" alt="" width="32" class=""><h6 class="m-0  translate-y3">Unlimited product updates</h6>
+                  </div>
+                  <div class="features-list">
+                    <img src="assets/images/circle-ok-mute.svg" alt="" width="32" class=""><h6 class="m-0  translate-y3">1GB  Cloud storage</h6>
+                  </div>
+                  <div class="features-list">
+                    <img src="assets/images/circle-ok-mute.svg" alt="" width="32" class=""><h6 class="m-0">Email and community support</h6>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--Testmonials-->
+    <div class="container pt-160 pb-160">
+      <div class="row">
+        <div class="col-6 ">
+          <h6 class="primary m-0 pb-1">Testimonials</h6>
+          <h2 class="m-0 pb-1">Our Popular Courses</h2>
+          <p class="m-0">Problems trying to resolve the conflict between 
+            the two major realms of Classical physics: Newtonian mechanics </p>
+        </div>
+        <div class="col-6"></div>
+      </div>
+
+      <div class="card-slider pt-80">
+        <div class="card-items text-align-center">
+          <img src="assets/images/testimonial-user-cover-1.png" alt="" width="128" class="card-slider-profile">
+          <p>Slate helps you see how many more days 
+          you need to work to reach your financial 
+          goal for the month and year.</p>
+          <img src="assets/images/five-stars.svg" alt="" width="130" class="pb-1">
+          <h5 class="m-0">Regina Miles</h5>
+          <h6 class="m-0 text-mute">Designer</h6>
+        </div>
+        <div class="card-items text-align-center">
+          <img src="assets/images/testimonial-user-cover-2.png" alt="" width="128" class="card-slider-profile">
+          <p>Slate helps you see how many more days 
+          you need to work to reach your financial 
+          goal for the month and year.</p>
+          <img src="assets/images/five-stars.svg" alt="" width="130" class="pb-1">
+          <h5 class="m-0">Regina Miles</h5>
+          <h6 class="m-0 text-mute">Designer</h6>
+        </div>
+        <div class="card-items text-align-center">
+          <img src="assets/images/testimonial-user-cover-1.png" alt="" width="128" class="card-slider-profile">
+          <p>Slate helps you see how many more days 
+          you need to work to reach your financial 
+          goal for the month and year.</p>
+          <img src="assets/images/five-stars.svg" alt="" width="130" class="pb-1">
+          <h5 class="m-0">Regina Miles</h5>
+          <h6 class="m-0 text-mute">Designer</h6>
+        </div>
+        <div class="card-items text-align-center">
+          <img src="assets/images/testimonial-user-cover-2.png" alt="" width="128" class="card-slider-profile">
+          <p>Slate helps you see how many more days 
+          you need to work to reach your financial 
+          goal for the month and year.</p>
+          <img src="assets/images/five-stars.svg" alt="" width="130" class="pb-1">
+          <h5 class="m-0">Regina Miles</h5>
+          <h6 class="m-0 text-mute">Designer</h6>
+        </div>
+      </div>
+    </div>
+
+
+    <!--CTA-->
+    <div class="container text-align-center pb-160">
+      <div class="main-content cust-container">
+        <h6 class="primary m-0 pb-1">Newsletter</h6>
+        <h2 class="m-0 pb-1">Our Popular Courses</h2>
+        <p class="m-0">Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics </p>
+      </div>
+      <div class="form cust-container pt-80">
+        <form action="">
+          <input type="email" placeholder="Your Email" required>
+          <input type="submit" value="Subscribe" class="btn-primary">
+        </form> 
+      </div>
+    </div>
+
+
+    <!--Footer-->
+    <footer>
+      <div class="footer-main-content container pb-50">
+        <div class="row g-30">
+          <div class="flex-20">
+            <h5 class="m-0">Company Info</h5>
+            <ul class="list-item">
+              <li>About US</li>
+              <li>Carrier</li>
+              <li>We are hiring</li>
+              <li>Blog</li>
+            </ul>
+          </div>
+          <div class="flex-20">
+            <h5 class="m-0">Legal</h5>
+            <ul class="list-item">
+              <li>About US</li>
+              <li>Carrier</li>
+              <li>We are hiring</li>
+              <li>Blog</li>
+            </ul>
+          </div>
+          <div class="flex-20">
+            <h5 class="m-0">Features</h5>
+            <ul class="list-item">
+              <li>Business Marketing</li>
+              <li>User Analytic</li>
+              <li>Live Chat</li>
+              <li>Unlimited Support</li>
+            </ul>
+          </div>
+          <div class="flex-20">
+            <h5 class="m-0">Resources</h5>
+            <ul class="list-item">
+              <li>IOS & Android</li>
+              <li>Watch a Demo</li>
+              <li>Customers</li>
+              <li>API</li>
+            </ul>
+          </div>
+          <div class="flex-20">
+            <h5 class="m-0">Get In Touch</h5>
+            <ul class="list-item">
+              <li><img src="assets/images/bx_bx-phone.svg" alt="">(480) 555-0103</li>
+              <li><img src="assets/images/bx_bx-map.svg" alt="">4517 Washington Ave. Manchester, 
+                Kentucky 39495</li>
+              <li><img src="assets/images/carbon_send-alt.svg" alt="">debra.holt@example.com</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copy-right">
+        <div class="row container">
+          <div class="col-6"><h6>Made With Love By Figmaland All Right Reserved </h6></div>
+          <div class="col-6 social-icons">
+            <img src="assets/images/facebook.svg" alt="" width="24">
+            <img src="assets/images/instagram.svg" alt="" width="24">
+            <img src="assets/images/twitter.svg" alt="" width="24">
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/slick.min.js"></script>
   </body>
 </html>
