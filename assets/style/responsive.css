@@ -54,6 +54,11 @@
         width: 100%;
         top: 0;
     }
+
+    a.hide-on-desktop {
+        opacity: 1;
+        visibility: inherit;
+    }
 }
 
 @media (max-width:900px) {
@@ -182,5 +187,16 @@
 
     .card-courses>img {
         width: 80px;
+    }
+
+    .new-bag {
+        top: -15px;
+        right: -15px;
+    }
+
+    .new-bag h3 {
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
     }
 }

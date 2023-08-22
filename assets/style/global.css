@@ -254,6 +254,14 @@ p, li {
     margin-right: 10px;
 }
 
+.mr-5px {
+    margin-right: 5px;
+}
+
+.ml-5px {
+    margin-left: 5px;
+}
+
 .mb-1{
     margin-bottom: 1rem;
 }

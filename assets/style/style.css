@@ -84,7 +84,7 @@ a.learn-more-outline {
 .stars span {
     background: #26335D;
     border-radius: 55px;
-    padding: 7px 11px;
+    padding: 7px 8px;
     color: #fff;
     font-size: 12px;
 }
@@ -113,8 +113,13 @@ a.learn-more-outline {
 
 .product-img-icons-bg {
     background: white;
-    padding: 10px;
     border-radius: 55px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 .product-img-sales-bag {
@@ -263,3 +268,10 @@ ul.list-item li {
 ul.list-item li:not(:last-child) {
     padding-bottom: 12px;
 }
+
+a.hide-on-desktop {
+    opacity: 0;
+    visibility: hidden;
+}
+
+
